@@ -1,0 +1,26 @@
+type Department @model @auth(rules: [{ allow: public }]){
+  id: ID!
+  name: String
+  manager: Employee @hasOne
+  employees: [Employee] @hasMany
+}
+
+type Employee @model @auth(rules: [{ allow: public }]){
+  id: ID!
+  name: String
+  age: Int
+  department: Department @belongsTo
+  projects: [EmployeeProjects] @hasMany
+}
+
+type EmployeeProjects @model(queries: null) @auth(rules: [{ allow: public }]){
+  id: ID!
+  employee: Employee @belongsTo
+  project: Project @belongsTo
+}
+
+type Project @model @auth(rules: [{ allow: public }]){
+  id: ID!
+  name: String
+  employees: [EmployeeProjects] @hasMany
+}

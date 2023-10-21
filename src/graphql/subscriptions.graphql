@@ -1,0 +1,97 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateDepartment(
+  $filter: ModelSubscriptionDepartmentFilterInput
+) {
+  onCreateDepartment(filter: $filter) {
+    id
+    name
+    manager {
+      id
+      name
+      age
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    departmentManagerId
+    __typename
+  }
+}
+
+subscription OnUpdateDepartment(
+  $filter: ModelSubscriptionDepartmentFilterInput
+) {
+  onUpdateDepartment(filter: $filter) {
+    id
+    name
+    manager {
+      id
+      name
+      age
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    departmentManagerId
+    __typename
+  }
+}
+
+subscription OnDeleteDepartment(
+  $filter: ModelSubscriptionDepartmentFilterInput
+) {
+  onDeleteDepartment(filter: $filter) {
+    id
+    name
+    manager {
+      id
+      name
+      age
+      createdAt
+      updatedAt
+      __typename
+    }
+    createdAt
+    updatedAt
+    departmentManagerId
+    __typename
+  }
+}
+
+subscription OnCreateEmployee($filter: ModelSubscriptionEmployeeFilterInput) {
+  onCreateEmployee(filter: $filter) {
+    id
+    name
+    age
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnUpdateEmployee($filter: ModelSubscriptionEmployeeFilterInput) {
+  onUpdateEmployee(filter: $filter) {
+    id
+    name
+    age
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+subscription OnDeleteEmployee($filter: ModelSubscriptionEmployeeFilterInput) {
+  onDeleteEmployee(filter: $filter) {
+    id
+    name
+    age
+    createdAt
+    updatedAt
+    __typename
+  }
+}

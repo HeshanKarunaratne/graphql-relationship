@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-graphqlrelationship-dev-121944-authRole",
+      "UnauthRoleArn": "arn:aws:iam::560135145142:role/amplify-graphqlrelationship-dev-121944-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::560135145142:role/amplify-graphqlrelationship-dev-121944-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-graphqlrelationship-dev-121944-deployment",
+      "UnauthRoleName": "amplify-graphqlrelationship-dev-121944-unauthRole",
+      "StackName": "amplify-graphqlrelationship-dev-121944",
+      "StackId": "arn:aws:cloudformation:us-east-1:560135145142:stack/amplify-graphqlrelationship-dev-121944/06da3290-6fde-11ee-9cc6-0a92960b47c9",
+      "AmplifyAppId": "d1m71gghsez1nu"
+    },
+    "categories": {
+      "auth": {
+        "graphqlrelationship3ab60dec": {}
+      },
+      "api": {
+        "graphqlrelationship": {}
+      }
+    }
+  }
+}
